@@ -2,9 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import mlflow
 import mlflow.sklearn
-import mlflow
+import 
+import dagshub
+dagshub.init(repo_owner='deepak999-gif', repo_name='mlflow-dagshub-demo', mlflow=True)
 
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_tracking_uri("https://dagshub.com/deepak999-gif/mlflow-dagshub-demo.mlflow")
 
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
