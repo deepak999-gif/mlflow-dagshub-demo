@@ -90,13 +90,7 @@ with mlflow.start_run(run_name='decision_tree_run'):
   mlflow.log_metric('recall',recall)
   mlflow.log_metric('f1',f1)
   
-  mlflow.sklearn.log_model(
-    model,
-    name="meral_dusra_model",
-    skops_trusted_types=["sklearn.tree._tree.Tree"]
-    
-)
-  mlflow.log_artifact("train.py")
+
 
 print('Trained')
 
