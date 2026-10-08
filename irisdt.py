@@ -2,7 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import mlflow
 import mlflow.sklearn
-import 
 import dagshub
 dagshub.init(repo_owner='deepak999-gif', repo_name='mlflow-dagshub-demo', mlflow=True)
 
